@@ -10,6 +10,7 @@ module.exports = {
     "backgroundColor": "#ffffff"
   },
   "assetBundlePatterns": ["**/*"],
+
   "ios": {
     "supportsTablet": true
   },
@@ -29,4 +30,5 @@ module.exports = {
     }
   },
   "owner": "thai.bug120299"
+  
 };

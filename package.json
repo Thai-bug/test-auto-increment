@@ -1,6 +1,6 @@
 {
   "name": "test-auto-increment",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",

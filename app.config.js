@@ -10,6 +10,7 @@ module.exports = {
     "backgroundColor": "#ffffff"
   },
   "assetBundlePatterns": ["**/*"],
+
   "ios": {
     "supportsTablet": true
   },

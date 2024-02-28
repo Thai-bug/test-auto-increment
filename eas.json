@@ -1,21 +1,14 @@
 {
   "cli": {
-    "version": ">= 7.3.0",
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
-      "distribution": "internal"
-    },
     "production": {
-      "autoIncrement": true
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "autoIncrement": "version"
+      }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }

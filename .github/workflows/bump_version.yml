@@ -2,7 +2,7 @@ name: Workflow Bump Version
 
 on:
     pull_request:
-        branches: [pre_production]
+        branches: [pre-production]
 
 jobs:
     bump_version:

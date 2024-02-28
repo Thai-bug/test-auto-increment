@@ -22,8 +22,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.thai.bug120299.testautoincrement",
-      "autoIncrement": true
+      "package": "com.thai.bug120299.testautoincrement"
     },
     "web": {
       "favicon": "./assets/favicon.png"

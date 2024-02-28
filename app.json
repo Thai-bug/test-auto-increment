@@ -31,6 +31,10 @@
         "projectId": "f6b5897d-1dbc-4e39-8026-20082faa3d07"
       }
     },
-    "owner": "thai.bug120299"
+    "owner": "thai.bug120299",
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    },
+    "version": "1.0.2"
   }
 }

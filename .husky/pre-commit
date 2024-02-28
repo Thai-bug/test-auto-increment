@@ -4,6 +4,7 @@ export PATH=/usr/local/bin:$PATH
 # open /Applications/SourceTree.app/Contents/MacOS/SourceTree
 
 branch="$(git rev-parse --abbrev-ref HEAD)"
-echo "Branch: $branch"
 
-npx lint-staged
+# npx lint-staged
+
+node update-version.js 

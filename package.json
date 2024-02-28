@@ -19,8 +19,6 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "husky": "^8.0.3",
-    "semver": "^7.3.5",
-    "simple-git": "^3.2.6",
     "lint-staged": "^15.0.2",
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3"

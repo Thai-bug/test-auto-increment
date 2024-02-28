@@ -27,7 +27,6 @@ async function updateVersion() {
       await git.add("package.json");
       process.exit(0);
     }
-    
   } catch (e) {
     console.log(e);
     process.exit(1);

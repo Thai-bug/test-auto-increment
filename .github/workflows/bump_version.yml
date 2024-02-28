@@ -31,5 +31,4 @@ jobs:
           git reset --hard HEAD
           npm version patch
           git add .
-          git commit -m 'update version'
           git push

@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          repository: "Thai-bug/test-auto-increment.git"
+          token: ${{ secrets.GIT_PASSWORD }} 
+          ref: pre-production
 
       - name: Setup Node
         uses: actions/setup-node@v4

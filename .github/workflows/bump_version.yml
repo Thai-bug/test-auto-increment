@@ -29,7 +29,7 @@ jobs:
       
       - name: Commit and push
         run: |
-          git checkout pre-production
+          git pull origin pre-production
           git add .
           git commit -m 'update version'
           git push origin pre-production

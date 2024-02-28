@@ -1,0 +1,32 @@
+module.exports = {
+  "name": "test-auto-increment",
+  "slug": "test-auto-increment",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "userInterfaceStyle": "light",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "assetBundlePatterns": ["**/*"],
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#ffffff"
+    },
+    "package": "com.thai.bug120299.testautoincrement"
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "f6b5897d-1dbc-4e39-8026-20082faa3d07"
+    }
+  },
+  "owner": "thai.bug120299"
+};

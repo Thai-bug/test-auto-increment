@@ -25,12 +25,11 @@ jobs:
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
-          npm version patch
       
       - name: Commit and push
         run: |
-          git checkout pre-production
-          git pull origin pre-production
+          git reset --hard HEAD
+          npm version patch
           git add .
           git commit -m 'update version'
-          git push origin pre-production
+          git push

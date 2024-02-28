@@ -3,6 +3,7 @@ name: Workflow Bump Version
 on:
     pull_request:
         branches: [pre-production]
+        types: [closed]
 
 jobs:
   bump_version:
@@ -28,7 +29,6 @@ jobs:
       
       - name: Commit and push
         run: |
-          git reset --hard HEAD
-          npm version patch
-          git add .
+          node update-version.js
+          git commit -m 'update version'
           git push

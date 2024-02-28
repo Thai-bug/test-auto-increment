@@ -2,7 +2,6 @@
   "expo": {
     "name": "test-auto-increment",
     "slug": "test-auto-increment",
-    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

@@ -5,13 +5,25 @@ on:
         branches: [pre-production]
 
 jobs:
-    bump_version:
-        name: Bump Version
-        runs-on: ubuntu-latest
-        steps:
-        -   name: Checkout
-            uses: actions/checkout@v2
-        -   name: Bump Version
-            id: bump_version
-            run: |
-                echo "test"
+  bump_version:
+    name: Bump Version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: npm
+      
+      - name: Update version
+        run: |
+          npm version patch
+      
+      - name: Commit and push
+        run: |
+          git add .
+          git commit -m 'update version'
+          git push origin pre-production

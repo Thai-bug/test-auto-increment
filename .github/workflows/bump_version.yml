@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Thai-bug/test-auto-increment.git"
           token: ${{ secrets.GIT_PASSWORD }} 
@@ -23,6 +23,8 @@ jobs:
       
       - name: Update version
         run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           npm version patch
       
       - name: Commit and push
